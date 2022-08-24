@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<h1 id="output">Hi</h1>
+<input type="text" id="name">
+<button id="submit">Add</button>
+<script>
+         let target = document.querySelector('#submit');  
+         let name = document.querySelector('#name');  
+
+         target.addEventListener('click', function() {  
+          if (name.value.toLowerCase() == "hello") {
+            document.querySelector('#output').textContent = "I";
+          }else {
+            document.querySelector('#output').textContent = "Thank You";
+          }
+
+          })  
+</script>
+</body>
+</html>
