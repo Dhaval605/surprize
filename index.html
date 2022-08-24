@@ -9,6 +9,7 @@
 <body>
   
 <h1 id="output">Hi</h1>
+<label for="">Your Name</label>
 <input type="text" id="name">
 <button id="submit">Add</button>
 <script>
@@ -16,8 +17,8 @@
          let name = document.querySelector('#name');  
 
          target.addEventListener('click', function() {  
-          if (name.value.toLowerCase() == "hello") {
-            document.querySelector('#output').textContent = "I";
+          if (name.value.toLowerCase() == "nirav") {
+            document.querySelector('#output').textContent = "chal nikal";
           }else {
             document.querySelector('#output').textContent = "Thank You";
           }
